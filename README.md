@@ -43,4 +43,3 @@ Possible Improvements:
 1. Add Unit Tests: I have included some unit tests for key components. If I get more time, I will add additional unit tests to cover more scenarios, including testing the rotation functionality and zoom control.
 2. A11y tests: Should be fine now.
 3. Add drag and drop function.
-4. Create a custom hook for three.js rendering.

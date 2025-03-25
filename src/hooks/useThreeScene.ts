@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import React from "react";
 
 const FOV = 75;
 const NEAR = 0.1;
@@ -28,7 +29,6 @@ export function useThreeScene(
     containerRef.current.appendChild(renderer.domElement);
     rendererRef.current = renderer;
 
-    // Create cube
     const geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
     const material = new THREE.MeshBasicMaterial({
       color: 0xff5733,
@@ -37,7 +37,6 @@ export function useThreeScene(
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
-    // Animation
     const animate = () => {
       requestAnimationFrame(animate);
       cube.rotation.y = rotateClockwise;

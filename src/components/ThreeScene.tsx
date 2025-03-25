@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import React from "react";
 import { useThreeScene } from "../hooks/useThreeScene";
 
 interface IThreeScenceProps {
