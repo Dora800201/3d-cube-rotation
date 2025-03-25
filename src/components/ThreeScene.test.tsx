@@ -32,6 +32,8 @@ jest.mock("three", () => {
   };
 });
 
+// TODO: Add more unit tests
+
 describe("ThreeScene Component", () => {
   it("should render correctly and contain a canvas", () => {
     const { container } = render(
