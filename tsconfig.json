@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "target": "es5", // Set to a version like "es5", "es6", or later
+    "jsx": "react", // Add this line to enable JSX support
+    "module": "esnext", // Optional, depending on your module system
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true // Optional, helps with TypeScript type checking
+  }
+}

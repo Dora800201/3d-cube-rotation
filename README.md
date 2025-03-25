@@ -1,55 +1,42 @@
-# React + TypeScript + Vite
+3D Cube Rotation in React with Three.js
+This is a simple React application that uses Three.js to render a 3D cube and allows the user to control its rotation direction via a button.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
+3D Cube: A rotating cube rendered using Three.js.
 
-Currently, two official plugins are available:
+Interactive Button: A button to toggle the cube's rotation direction (clockwise or counterclockwise).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used:
+React: A JavaScript library for building user interfaces.
 
-## Expanding the ESLint configuration
+Three.js: A 3D graphics library to render the 3D cube.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Tailwind CSS: Utility-first CSS framework for styling.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Setup Instructions:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone the repository
+   bash
+   Copy
+   Edit
+   git clone https://github.com/Dora800201/3d-cube-rotation.git
+   cd 3d-cube-rotation
+2. Install dependencies
+   bash
+   Copy
+   Edit
+   npm install
+3. Start the development server
+   bash
+   Copy
+   Edit
+   npm start
+   The application will be running on http://localhost:5173 by default.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+How to Use:
+The cube will rotate automatically.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# unda-solution
+Click the "Rotate Clockwise" or "Rotate Counterclockwise" button to toggle the cube's rotation direction.
+
+License:
+This project is open-source and available under the MIT License.
