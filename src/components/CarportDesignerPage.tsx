@@ -1,6 +1,6 @@
 import Content from "./Content";
 
-const CabinetDesignerPage = () => {
+const CarportDesignerPage = () => {
   return (
     <>
       <div className="bg-[#5299d8] flex items-center justify-center flex-col min-h-50 text-white">
@@ -11,4 +11,4 @@ const CabinetDesignerPage = () => {
   );
 };
 
-export default CabinetDesignerPage;
+export default CarportDesignerPage;

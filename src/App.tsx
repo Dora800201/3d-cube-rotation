@@ -1,9 +1,9 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import CabinetDesignerPage from "./components/CabinetDesignerPage";
 import Contact from "./components/Contact";
 import HomePage from "./components/HomePage";
 import Navbar from "./components/Navbar";
+import CarportDesignerPage from "./components/CarportDesignerPage";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Routes>
         <Route path="/" Component={HomePage} />
         <Route
-          path="/products/3d-cabinet-designer"
-          Component={CabinetDesignerPage}
+          path="/products/steel-carport-designer"
+          Component={CarportDesignerPage}
         />
         <Route path="/contact" Component={Contact} />
       </Routes>
