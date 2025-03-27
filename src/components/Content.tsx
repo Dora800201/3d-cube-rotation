@@ -15,8 +15,8 @@ const Content = () => {
   }
 
   return (
-    <div className="min-h-50 flex bg-amber-50 justify-center items-center gap-10">
-      <div className="flex flex-col gap-2">
+    <div className="min-h-50 flex flex-col bg-amber-50 justify-center items-center gap-10 md:flex-row">
+      <div className="flex gap-2 m-10 md:flex-col">
         <Button label="Rotation" onClick={handleRotation}></Button>
         <Button label="Zoom in" onClick={handleZoomIn}></Button>
         <Button

@@ -14,7 +14,7 @@ const ThreeScene = ({ zoomLevel, rotateClockwise }: IThreeScenceProps) => {
 
   return (
     <div className="flex items-center justify-center p-10">
-      <div ref={mountRef} style={{ width: "600px", height: "600px" }}></div>
+      <div ref={mountRef} style={{ width: "50rem", height: "50rem" }}></div>
     </div>
   );
 };
