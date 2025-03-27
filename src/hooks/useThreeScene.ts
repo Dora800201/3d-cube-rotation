@@ -45,7 +45,21 @@ export function useThreeScene(
     };
     animate();
 
+    const handleResize = () => {
+      if (!containerRef.current || !rendererRef.current) return;
+
+      const newWidth = containerRef.current.clientWidth;
+      const newHeight = containerRef.current.clientHeight;
+
+      console.log(newWidth, newHeight);
+
+      rendererRef.current.setSize(newWidth, newHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
     return () => {
+      window.removeEventListener("resize", handleResize);
       if (rendererRef.current && containerRef.current) {
         containerRef.current.removeChild(rendererRef.current.domElement);
         rendererRef.current.dispose();
